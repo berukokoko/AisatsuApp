@@ -41,21 +41,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 
-                        if(hourOfDay >= 2  && minute >= 0){
+                        if(hourOfDay >= 18  && minute >= 0){
                             TextView textView = (TextView) findViewById(R.id.textView);
-                            textView.setText("おはよう");
+                            textView.setText("こんばんわ");
                         }
                         else if(hourOfDay >= 10  && minute >= 0){
                             TextView textView = (TextView) findViewById(R.id.textView);
                             textView.setText("こんにちは");
                         }
-                        else if(hourOfDay >= 18  && minute >= 0){
+                        else if(hourOfDay >= 2  && minute >= 0){
                             TextView textView = (TextView) findViewById(R.id.textView);
-                            textView.setText("こんばんは");
+                            textView.setText("おはよう");
                         }
                         else{
                             TextView textView = (TextView) findViewById(R.id.textView);
-                            textView.setText("他");
+                            textView.setText("こんばんは");
                         }
                     }
                 },
